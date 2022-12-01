@@ -1,0 +1,136 @@
+@@include('header.htm')
+
+@@include('navigation.htm')
+
+<section class="advt-post bg-gray py-5">
+  <div class="container">
+    <form onsubmit="return addAnimal()">
+      <!-- Post Your ad start -->
+      <fieldset class="border border-gary px-3 px-md-4 py-4 mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>ลงทะเบียนสมาชิก</h3>
+          </div>
+
+          <div class="col-lg-6">
+            <h6 class="font-weight-bold pt-4 pb-1">Username:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุ Username" required>
+            <h6 class="font-weight-bold pt-4 pb-1">Password:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุ Password" required>
+            <h6 class="font-weight-bold pt-4 pb-1">คำนำหน้า:</h6>
+            <select name="color" class="form-control w-100 bg-white" id="color">
+              <option value="แดง">นาง</option>
+              <option value="แดงโบท">นางสาว</option>
+              <option value="ขาว">นาย</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1">ชื่อ:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุชื่อ" required>
+            <h6 class="font-weight-bold pt-4 pb-1">นามสกุล:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุนามสกุล" required>
+
+          </div>
+          <div class="col-lg-6">
+             <h6 class="font-weight-bold pt-4 pb-1">เบอร์โทรศัพท์:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเบอร์โทรศัพท์" required>
+
+            <h6 class="font-weight-bold pt-4 pb-1">เลขบัตรประชาชน:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเลขประจำตัวประชาชน" required>
+
+
+            <h6 class="font-weight-bold pt-4 pb-1">เลขบันชีธนาคาร:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเลขบันชีธนาคาร" required>
+
+            <h6 class="font-weight-bold pt-4 pb-1">ธนาคาร:</h6>
+            <select name="color" class="form-control w-100 bg-white" id="color">
+              <option value="ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร">ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร</option>
+              <option value="ธนาคารออมสิน">ธนาคารออมสิน</option>
+              <option value="ธนาคารกรุงเทพ จำกัด (มหาชน)">ธนาคารกรุงเทพ จำกัด (มหาชน)</option>
+              <option value="ธนาคารกรุงไทย จำกัด (มหาชน)">ธนาคารกรุงไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)">ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)</option>
+              <option value="ธนาคารกสิกรไทย จำกัด (มหาชน)">ธนาคารกสิกรไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารทหารไทยธนชาต จำกัด (มหาชน)">ธนาคารทหารไทยธนชาต จำกัด (มหาชน)</option>
+              <option value="ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน)">ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารไทยพาณิชย์ จำกัด (มหาชน)">ธนาคารไทยพาณิชย์ จำกัด (มหาชน)</option>
+              <option value="ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย) จำกัด (มหาชน)">ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย) จำกัด (มหาชน)</option>
+              <option value="ธนาคารยูโอบี จำกัด (มหาชน)">ธนาคารยูโอบี จำกัด (มหาชน)</option>
+              <option value="ธนาคารทิสโก้ จำกัด (มหาชน)">ธนาคารทิสโก้ จำกัด (มหาชน)</option>
+              <option value="ธนาคารเกียรตินาคินภัทร จำกัด (มหาชน)">ธนาคารเกียรตินาคินภัทร จำกัด (มหาชน)</option>
+              <option value="ธนาคารแลนด์ แอนด์ เฮ้าส์ จำกัด (มหาชน)">ธนาคารแลนด์ แอนด์ เฮ้าส์ จำกัด (มหาชน)</option>
+              <option value="ธนาคารไอซีบีซี (ไทย) จำกัด (มหาชน)">ธนาคารไอซีบีซี (ไทย) จำกัด (มหาชน)</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1" :>ที่อยู่</h6>
+            <textarea name="remark" id="remark" class="form-control bg-white" rows="7" placeholder="กรุณาระบุที่อยู่ให้ชัดเจน"
+              required></textarea>
+            </div>
+            </div>
+
+
+
+  <!-- seller-information end-->
+
+  <!-- ad-feature start -->
+
+  <!-- ad-feature start -->
+
+  <!-- submit button -->
+  <div class="checkbox d-inline-flex">
+
+  </div>
+  <button type="submit" class="btn btn-primary d-block mt-2 col-12" >สมัครสมาชิก</button>
+  </form>
+  </div>
+</section>
+@@include('footer.htm')
+
+<script>
+  function addAnimal(){
+    let animalID = null;
+    let earNumber = null;
+    let animalName = document.getElementById("animal_name").value;
+    let animalType = document.getElementById("aniaml_type").value;
+    let Specie = document.getElementById("specie").value;
+    let Age = document.getElementById("age").value;
+    let Color = document.getElementById("color").value;
+    let Gender = document.getElementById("gender").value;
+    let imgList = null;
+    let breederListID = null
+    let Status = 0;
+    let Remark =document.getElementById("remark").value;
+    // let BreederID1 = document.getElementById("breeder_id1").value;
+    // let BreederID2 = document.getElementById("breeder_id2").value;
+
+    const xhttpAnimal = new XMLHttpRequest();
+    xhttpAnimal.open("POST", "http://127.0.0.1:3030/api-Animal/animalSave",true);
+    xhttpAnimal.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttpAnimal.onreadystatechange = function () {
+    if (this.readyState === 4 && status === 200) {
+      const objects = JSON.parse(this.responseText);
+      console.log(objects);
+    }
+  }
+    if (confirm("คุณต้องการบันทึกข้อมูล")) {
+      alert("You pressed OK!");
+      xhttpAnimal.send(JSON.stringify({
+      "animal_id": animalID,
+      "ear_number": earNumber,
+      "animal_name": animalName,
+      "animal_type": animalType,
+      "specie": Specie,
+      "age": Age,
+      "color": Color,
+      "gender": Gender,
+      "img_list": imgList,
+      "breeder_list_id": breederListID,
+      "status": Status,
+      "remark": Remark,
+      // "breeder_list"
+    }));
+
+    } else {
+      alert("You pressed Cancel!");
+    }
+
+
+
+ }
+</script>

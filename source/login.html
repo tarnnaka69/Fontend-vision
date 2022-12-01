@@ -1,0 +1,30 @@
+@@include('header.htm')
+
+@@include('navigation.htm')
+
+<section class="login py-5 border-top-1">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-8 align-item-center">
+        <div class="border">
+          <h3 class="bg-gray p-4">ลงชื่อเข้าใช้</h3>
+          <form action="#">
+            <fieldset class="p-4">
+              <input class="form-control mb-3" type="text" placeholder="Username" required>
+              <input class="form-control mb-3" type="password" placeholder="Password" required>
+              <div class="loggedin-forgot">
+                <input type="checkbox" id="keep-me-logged-in">
+                <label for="keep-me-logged-in" class="pt-3 pb-2">แสดงรหัสผ่าน</label>
+              </div>
+              <button type="button" class="btn btn-outline-dark button-nav-confiig form-control mb-3 " href="">ลงชื่อเข้าสู่ระบบ</button>
+              <a class="mt-6 d-block text-primary" href="">ลืมรหัสผ่าน?</a>
+              <a class="mt-6 d-inline-block text-primary" href="ad-regist.html">สมัครสมาชิก</a>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('footer.htm')

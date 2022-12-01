@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>VISIONCOWBAND</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Agency HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Classified Marketplace Template v1.0">
+
+  <!-- favicon -->
+  <link href="images/logo3.jpg" rel="shortcut icon">
+
+  <!--
+  Essential stylesheets
+  =====================================-->
+  <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="plugins/bootstrap/bootstrap-slider.css" rel="stylesheet">
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tree.css">
+
+</head>
+
+<body class="body-wrapper">
+
+
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="index.html">
+
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item  ">
+                <a href="index.html"><button type="button" class="btn btn-outline-dark button-nav-confiig" >วัวขึ้นทะเบียนวันนี้</button></a>
+
+							</li>
+
+
+
+
+              <li class="nav-item  ">
+               <a href="category.html"> <button type="button" class="btn btn-outline-dark button-nav-confiig " >รายการแจ้งขายวัว</button></a>
+							</li>
+              <!-- <li class="nav-item  active">
+								<a class="nav-link" href="../index.html"></a>
+							</li> -->
+              <li class="nav-item  ">
+                <a href="index2.html"><button type="button" class="btn btn-outline-dark button-nav-confiig">ต่ออายุประวัติวัว</button></a>
+							</li>
+              <li class="nav-item  ">
+                <a href="ad-regist.html"><button type="button" class="btn btn-outline-dark button-nav-confiig" href="">สมัครสมาชิก</button></a>
+							</li>
+
+
+
+						<ul class="navbar-nav ml-auto mt-10">
+							<li class="nav-item ">
+                <a href="login.html"><button type="button" class="btn btn-outline-dark button-nav-confiig" >แจ้งเปลี่ยนผู้ถือกรรมสิทธิ์</button></a>
+
+							</li>
+							<li class="nav-item ">
+                <a href="ad-listing.html"><button type="button" class="btn btn-success" ><i class="fa fa-plus-circle"></i> ลงทะเบียนวัวควาย</button></a>
+
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<section class="advt-post bg-gray py-5">
+  <div class="container">
+    <form onsubmit="return addAnimal()">
+      <!-- Post Your ad start -->
+      <fieldset class="border border-gary px-3 px-md-4 py-4 mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>ลงทะเบียนสมาชิก</h3>
+          </div>
+
+          <div class="col-lg-6">
+            <h6 class="font-weight-bold pt-4 pb-1">Username:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุ Username" required>
+            <h6 class="font-weight-bold pt-4 pb-1">Password:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุ Password" required>
+            <h6 class="font-weight-bold pt-4 pb-1">คำนำหน้า:</h6>
+            <select name="color" class="form-control w-100 bg-white" id="color">
+              <option value="แดง">นาง</option>
+              <option value="แดงโบท">นางสาว</option>
+              <option value="ขาว">นาย</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1">ชื่อ:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุชื่อ" required>
+            <h6 class="font-weight-bold pt-4 pb-1">นามสกุล:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุนามสกุล" required>
+
+          </div>
+          <div class="col-lg-6">
+             <h6 class="font-weight-bold pt-4 pb-1">เบอร์โทรศัพท์:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเบอร์โทรศัพท์" required>
+
+            <h6 class="font-weight-bold pt-4 pb-1">เลขบัตรประชาชน:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเลขประจำตัวประชาชน" required>
+
+
+            <h6 class="font-weight-bold pt-4 pb-1">เลขบันชีธนาคาร:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุเลขบันชีธนาคาร" required>
+
+            <h6 class="font-weight-bold pt-4 pb-1">ธนาคาร:</h6>
+            <select name="color" class="form-control w-100 bg-white" id="color">
+              <option value="ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร">ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร</option>
+              <option value="ธนาคารออมสิน">ธนาคารออมสิน</option>
+              <option value="ธนาคารกรุงเทพ จำกัด (มหาชน)">ธนาคารกรุงเทพ จำกัด (มหาชน)</option>
+              <option value="ธนาคารกรุงไทย จำกัด (มหาชน)">ธนาคารกรุงไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)">ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)</option>
+              <option value="ธนาคารกสิกรไทย จำกัด (มหาชน)">ธนาคารกสิกรไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารทหารไทยธนชาต จำกัด (มหาชน)">ธนาคารทหารไทยธนชาต จำกัด (มหาชน)</option>
+              <option value="ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน)">ธนาคารซีไอเอ็มบี ไทย จำกัด (มหาชน)</option>
+              <option value="ธนาคารไทยพาณิชย์ จำกัด (มหาชน)">ธนาคารไทยพาณิชย์ จำกัด (มหาชน)</option>
+              <option value="ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย) จำกัด (มหาชน)">ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย) จำกัด (มหาชน)</option>
+              <option value="ธนาคารยูโอบี จำกัด (มหาชน)">ธนาคารยูโอบี จำกัด (มหาชน)</option>
+              <option value="ธนาคารทิสโก้ จำกัด (มหาชน)">ธนาคารทิสโก้ จำกัด (มหาชน)</option>
+              <option value="ธนาคารเกียรตินาคินภัทร จำกัด (มหาชน)">ธนาคารเกียรตินาคินภัทร จำกัด (มหาชน)</option>
+              <option value="ธนาคารแลนด์ แอนด์ เฮ้าส์ จำกัด (มหาชน)">ธนาคารแลนด์ แอนด์ เฮ้าส์ จำกัด (มหาชน)</option>
+              <option value="ธนาคารไอซีบีซี (ไทย) จำกัด (มหาชน)">ธนาคารไอซีบีซี (ไทย) จำกัด (มหาชน)</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1" :>ที่อยู่</h6>
+            <textarea name="remark" id="remark" class="form-control bg-white" rows="7" placeholder="กรุณาระบุที่อยู่ให้ชัดเจน"
+              required></textarea>
+            </div>
+            </div>
+
+
+
+  <!-- seller-information end-->
+
+  <!-- ad-feature start -->
+
+  <!-- ad-feature start -->
+
+  <!-- submit button -->
+  <div class="checkbox d-inline-flex">
+
+  </div>
+  <button type="submit" class="btn btn-primary d-block mt-2 col-12" >สมัครสมาชิก</button>
+  </form>
+  </div>
+</section>
+<!--============================
+=            Footer            =
+=============================-->
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>Copyright &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>. Visioncowband by <a class="text-white" href="https://themefisher.com">Rena farm registerstasion</a></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- Social Icons -->
+        <ul class="social-media-icons text-center text-lg-right">
+          <li><a class="fa fa-facebook" href="https://www.facebook.com/themefisher"></a></li>
+          <li><a class="fa fa-twitter" href="https://www.twitter.com/themefisher"></a></li>
+          <li><a class="fa fa-pinterest-p" href="https://www.pinterest.com/themefisher"></a></li>
+          <li><a class="fa fa-github-alt" href="https://www.github.com/themefisher"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="fa fa-angle-up"></i>
+  </div>
+</footer>
+
+<!--
+Essential Scripts
+=====================================-->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/popper.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/bootstrap-slider.js"></script>
+<script src="plugins/tether/js/tether.min.js"></script>
+<script src="plugins/raty/jquery.raty-fa.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<script src="plugins/google-map/map.js" defer></script>
+<!-- axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+  function addAnimal(){
+    let animalID = null;
+    let earNumber = null;
+    let animalName = document.getElementById("animal_name").value;
+    let animalType = document.getElementById("aniaml_type").value;
+    let Specie = document.getElementById("specie").value;
+    let Age = document.getElementById("age").value;
+    let Color = document.getElementById("color").value;
+    let Gender = document.getElementById("gender").value;
+    let imgList = null;
+    let breederListID = null
+    let Status = 0;
+    let Remark =document.getElementById("remark").value;
+    // let BreederID1 = document.getElementById("breeder_id1").value;
+    // let BreederID2 = document.getElementById("breeder_id2").value;
+
+    const xhttpAnimal = new XMLHttpRequest();
+    xhttpAnimal.open("POST", "http://127.0.0.1:3030/api-Animal/animalSave",true);
+    xhttpAnimal.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttpAnimal.onreadystatechange = function () {
+    if (this.readyState === 4 && status === 200) {
+      const objects = JSON.parse(this.responseText);
+      console.log(objects);
+    }
+  }
+    if (confirm("คุณต้องการบันทึกข้อมูล")) {
+      alert("You pressed OK!");
+      xhttpAnimal.send(JSON.stringify({
+      "animal_id": animalID,
+      "ear_number": earNumber,
+      "animal_name": animalName,
+      "animal_type": animalType,
+      "specie": Specie,
+      "age": Age,
+      "color": Color,
+      "gender": Gender,
+      "img_list": imgList,
+      "breeder_list_id": breederListID,
+      "status": Status,
+      "remark": Remark,
+      // "breeder_list"
+    }));
+
+    } else {
+      alert("You pressed Cancel!");
+    }
+
+
+
+ }
+</script>

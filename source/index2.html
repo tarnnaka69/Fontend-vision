@@ -1,0 +1,152 @@
+@@include('header.htm')
+
+@@include('navigation.htm',{"home":"active"})
+
+@@include('hero-area.htm')
+
+
+<!--===========================================
+=            Popular deals section            =
+============================================-->
+
+<section class="section-sm" style="width: 90%;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search-result bg-gray">
+					<h2>รายการต่ออายุวัว</h2>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4">
+				<div class="category-sidebar">
+          <div class="input-group input-group-sm mb-3">
+            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <div class="widget price-range w-100">
+            <h4 class="widget-header">ราคา</h4>
+            <div class="block">
+                      <input class="range-track w-100" type="text" data-slider-min="0" data-slider-max="5000000" data-slider-step="10"
+                      data-slider-value="[0,5000000]">
+                  <div class="d-flex justify-content-between mt-2">
+                      <span class="value">10 - 5,000,000บาท</span>
+                  </div>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8">
+				<div class="category-search-filter">
+					<div class="row">
+
+						<div class="col-md-6 text-center text-md-right mt-2 mt-md-0">
+						</div>
+					</div>
+				</div>
+
+				 <!--ad listing list
+         <div class="product-grid-list">
+					<div class="row mt-30">
+						<div class="col-lg-4 col-md-6">
+							@@include('products.htm',{
+							"img-src" : "images/products/products-1.jpg",
+							"heading" : "เจ้าฟ้า",
+							"category" : "อินดูบราซิล",
+							"date" : "26 ตุลาคม 2565"
+							})
+						</div>
+						<div class="col-lg-4 col-md-6">
+							@@include('products.htm',{
+							"img-src" : "images/products/products-2.jpg",
+							"heading" : "เจ้าสมุทร",
+							"category" : "อเมริกันบรามัน",
+							"date" : "26 ตุลาคม 2565"
+							})
+						</div>
+						<div class="col-lg-4 col-md-6">
+							@@include('products.htm',{
+							"img-src" : "images/products/products-3.jpg",
+							"heading" : "เจ้าฟ้า",
+							"category" : "อเมริกันบรามัน",
+							"date" : "26 ตุลาคม 2565"
+							})
+						</div>
+            <div class="product-grid-list">
+              <div class="row mt-30">
+                <div class="col-lg-4 col-md-6">
+                  @@include('products.htm',{
+                  "img-src" : "images/products/products-1.jpg",
+                  "heading" : "เจ้าฟ้า",
+                  "category" : "อินดูบราซิล",
+                  "date" : "26 ตุลาคม 2565"
+                  })
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  @@include('products.htm',{
+                  "img-src" : "images/products/products-2.jpg",
+                  "heading" : "เจ้าสมุทร",
+                  "category" : "อเมริกันบรามัน",
+                  "date" : "26 ตุลาคม 2565"
+                  })
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  @@include('products.htm',{
+                  "img-src" : "images/products/products-3.jpg",
+                  "heading" : "เจ้าฟ้า",
+                  "category" : "อเมริกันบรามัน",
+                  "date" : "26 ตุลาคม 2565"
+                  })
+                </div>
+
+
+				</div>
+
+
+
+				 <div class="pagination justify-content-center py-4">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="ad-list-view.html" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+							<li class="page-item "><a class="page-link" href="ad-list-view.html">2</a></li>
+							<li class="page-item"><a class="page-link" href="ad-list-view.html">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="ad-list-view.html" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>-->
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+@@include('footer.htm')
+
+
+
+<script>
+  function showClockRealTime(){
+
+   var d = new Date();
+  document.getElementById("DateTime").innerHTML= "วันที่ "+d.getDate()+" เดือน "+(d.getMonth()+1)+" ปี "+d.getFullYear();
+  document.getElementById("Time").innerHTML= d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+  }
+
+ setInterval("showClockRealTime()", 1000);
+</script>

@@ -1,0 +1,242 @@
+@@include('header.htm')
+
+@@include('navigation.htm')
+
+<section class="advt-post bg-gray py-5">
+  <div class="container">
+    <form onsubmit="return addAnimal()">
+      <!-- Post Your ad start -->
+      <fieldset class="border border-gary px-3 px-md-4 py-4 mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>ลงทะเบียนวัวควาย</h3>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="font-weight-bold pt-4 pb-1">ชื่อวัว:</h6>
+            <input type="text" class="form-control bg-white" id="animal_name" placeholder="กรุณาระบุชื่อวัว" required>
+            <h6 class="font-weight-bold pt-4 pb-1">อายุวัว:</h6>
+            <select name="" class="form-control w-100 bg-white" id="age">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="1">11</option>
+              <option value="2">12</option>
+              <option value="3">13</option>
+              <option value="4">14</option>
+              <option value="5">15</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1">เพศ:</h6>
+            <div class="row px-3">
+              <div class="col-lg-4 mr-lg-4 my-2 pt-2 pb-1 rounded bg-white">
+                <input type="radio" name="gender" value="F" id="gender" >
+                <label for="F" class="py-2">เพศผู้</label>
+              </div>
+              <div class="col-lg-4 mr-lg-4 my-2 pt-2 pb-1 rounded bg-white ">
+                <input type="radio" name="gender" value="FM" id="gender" >
+                <label for="FM" class="py-2">เพศเมีย</label>
+              </div>
+            </div>
+            <h6 class="font-weight-bold pt-4 pb-1" :>รายละเอียดเกี่ยวกับวัว ตำหนิ จุดเด่น</h6>
+            <textarea name="remark" id="remark" class="form-control bg-white" rows="7" placeholder="กรุณาระบุรายละเอียด"
+              required></textarea>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="font-weight-bold pt-4 pb-1">สายพันธุ์วัว:</h6>
+            <select name="specie" class="form-control w-100 bg-white" id="specie">
+              <option value="อเมริกันบรามัน">อเมริกันบรามัน</option>
+              <option value="อินดูบราซิล">อินดูบราซิล</option>
+              <option value="ชาโลเล่">ชาโลเล่</option>
+              <option value="วากิว">วากิว</option>
+              <option value="ควาย"> ควาย</option>
+            </select>
+            <h6 class="font-weight-bold pt-4 pb-1">สี:</h6>
+            <select name="color" class="form-control w-100 bg-white" id="color">
+              <option value="แดง">แดง</option>
+              <option value="แดงโบท">แดงโบท</option>
+              <option value="ขาว">ขาว</option>
+              <option value="ขาวโบท">ขาวโบท</option>
+              <option value="เหลือง">เหลือง</option>
+              <option value="เหลืองโบท">เหลืองโบท</option>
+              <option value="ดำ">ดำ</option>
+              <option value="แฟนซี">แฟนซี</option>
+              <option value="เทา">เทา</option>
+              <option value="เผือก">เผือก</option>
+            </select>
+            <div class="price">
+              <h6 class="font-weight-bold pt-4 pb-1">ราคา:</h6>
+              <div class="row px-3">
+                <div class="col-lg-4 rounded my-2 px-0">
+                  <input type="text" name="price" class="form-control bg-white" placeholder="กรุณาระบุราคา"
+                    id="price">
+                </div>
+                <div class="col-lg-3 ml-lg-3 my-2 pt-2 pb-1 rounded bg-white ">
+                  <input type="radio" name="aniaml_type" value="BF" id="aniaml_type">
+                  <label for="BF" class="py-2">พ่อพันธุ์</label>
+                </div>
+                <div class="col-lg-3 ml-lg-3 my-2 pt-2 pb-1 rounded bg-white ">
+                  <input type="radio" name="aniaml_type" value="BFM" id="aniaml_type">
+                  <label for="BFM" class="py-2">แม่พันธุ์</label>
+                </div>
+
+              </div>
+            </div>
+            <div class="choose-file text-center my-4 py-4 rounded bg-white">
+              <label for="file-upload">
+                <span class="d-block font-weight-bold text-dark">กรุณาอัพโหลดรูปภาพวัว</span>
+                <span class="d-block"></span>
+                <span class="d-block btn bg-primary text-white my-3 select-files">อัพโหลดรูป</span>
+                <span class="d-block">รูปต้องมี ช่วงหน้า ช่วงตัว ช่วงข้าง ระบุรูปไห้ชัดเจน</span>
+                <input type="file" class="form-control-file d-none" id="file-upload" name="file">
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Post Your ad end -->
+
+      <!-- seller-information start -->
+      <fieldset class="border px-3 px-md-4 py-4 my-5 seller-information bg-gray">
+        <div class="row d-flex justify-content-center">
+          <div class=" tf-tree example col-12 ">
+            <h6 class="font-weight-bold pt-4 pb-1">สายพันธุกรรมวัว</h6>
+            <ul>
+              <li>
+                <span class="tf-nc">
+                    <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="กรุณาระบุชื่อวัว">
+                </span>
+                <ul>
+                  <li>
+                    <span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="กรุณาระบุพ่อพันธ์"></span>
+                    <ul>
+                      <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ปู่"></span>
+                        <ul>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ปู่ทวด"></span>
+
+                          </li>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ย่าทวด"></span>
+
+                          </li>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ย่า"></span>
+                        <ul>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ย่าทวด"></span>
+
+                          </li>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ปู่ทวด"></span>
+
+                          </li>
+
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="กรุณาระบุแม่พันธุ์"></span>
+                    <ul>
+                      <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ตา"></span>
+                        <ul>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ตาทวด"></span>
+
+                          </li>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ยายทวด"></span>
+
+                          </li>
+                        </ul>
+                      </li>
+                      <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ยาย"></span>
+                        <ul>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ยายทวด"></span>
+
+                          </li>
+                          <li><span class="tf-nc "> <input type="text" class="form-control  text-center" id="inputPassword2" placeholder="ตาทวด"></span>
+
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </fieldset>
+  <!-- seller-information end-->
+
+  <!-- ad-feature start -->
+
+  <!-- ad-feature start -->
+
+  <!-- submit button -->
+  <div class="checkbox d-inline-flex">
+
+  </div>
+  <button type="submit" class="btn btn-primary d-block mt-2 col-12" >ลงทะเบียนวัว</button>
+  </form>
+  </div>
+</section>
+@@include('footer.htm')
+
+<script>
+  function addAnimal(){
+    let animalID = null;
+    let earNumber = null;
+    let animalName = document.getElementById("animal_name").value;
+    let animalType = document.getElementById("aniaml_type").value;
+    let Specie = document.getElementById("specie").value;
+    let Age = document.getElementById("age").value;
+    let Color = document.getElementById("color").value;
+    let Gender = document.getElementById("gender").value;
+    let imgList = null;
+    let breederListID = null
+    let Status = 0;
+    let Remark =document.getElementById("remark").value;
+    // let BreederID1 = document.getElementById("breeder_id1").value;
+    // let BreederID2 = document.getElementById("breeder_id2").value;
+
+    const xhttpAnimal = new XMLHttpRequest();
+    xhttpAnimal.open("POST", "http://127.0.0.1:3030/api-Animal/animalSave",true);
+    xhttpAnimal.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttpAnimal.onreadystatechange = function () {
+    if (this.readyState === 4 && status === 200) {
+      const objects = JSON.parse(this.responseText);
+      console.log(objects);
+    }
+  }
+    if (confirm("คุณต้องการบันทึกข้อมูล")) {
+      alert("You pressed OK!");
+      xhttpAnimal.send(JSON.stringify({
+      "animal_id": animalID,
+      "ear_number": earNumber,
+      "animal_name": animalName,
+      "animal_type": animalType,
+      "specie": Specie,
+      "age": Age,
+      "color": Color,
+      "gender": Gender,
+      "img_list": imgList,
+      "breeder_list_id": breederListID,
+      "status": Status,
+      "remark": Remark,
+      // "breeder_list"
+    }));
+
+    } else {
+      alert("You pressed Cancel!");
+    }
+
+
+
+ }
+</script>
